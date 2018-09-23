@@ -296,7 +296,7 @@ const country_name_Handler =  {
         if(slotval=="India")
        
      {  say="wildlife protection society of india,  world wide fund, wild life trust of india";
-     }else if(slotval=="China")
+     }else if(slotval=="china")
        
      {  say="greenpeace east asia,  green camel bell";
      } else if(slotval=="Nepal")
