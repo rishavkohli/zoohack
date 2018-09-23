@@ -1,0 +1,134 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "wildlife guru",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "product_name",
+                    "slots": [
+                        {
+                            "name": "typeof",
+                            "type": "typeof"
+                        }
+                    ],
+                    "samples": [
+                        "product is {typeof}",
+                        "that is {typeof}",
+                        "{typeof}",
+                        "my product name is {typeof}"
+                    ]
+                },
+                {
+                    "name": "animal_type",
+                    "slots": [
+                        {
+                            "name": "animal",
+                            "type": "AMAZON.Animal"
+                        }
+                    ],
+                    "samples": [
+                        "its {animal}",
+                        "{animal}",
+                        "my choice is {animal}"
+                    ]
+                },
+                {
+                    "name": "country_name",
+                    "slots": [
+                        {
+                            "name": "country",
+                            "type": "AMAZON.Country"
+                        }
+                    ],
+                    "samples": [
+                        "i live in {country}",
+                        "{country}",
+                        "my country is {country}"
+                    ]
+                },
+                {
+                    "name": "ngo_list",
+                    "slots": [],
+                    "samples": [
+                        "yes",
+                        "yes please"
+                    ]
+                },
+                {
+                    "name": "legal_list",
+                    "slots": [],
+                    "samples": [
+                        "yes give me items",
+                        "yes provide me list",
+                        "yes give me list"
+                    ]
+                },
+                {
+                    "name": "no_list",
+                    "slots": [],
+                    "samples": [
+                        "no i don't want any list",
+                        "no i don't want any item",
+                        "no i don't want a list"
+                    ]
+                },
+                {
+                    "name": "no_ngo",
+                    "slots": [],
+                    "samples": [
+                        "nope",
+                        "no",
+                        "no i don't want any ngo details"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "typeof",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "shoes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medicines"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bags"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "necklace"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
