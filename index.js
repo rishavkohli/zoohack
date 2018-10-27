@@ -175,7 +175,7 @@ const product_name_Handler =  {
            say = 'some necklace are made of these animals -- ELEPHANT , WHALE , TIGER , BEAR AND RHINO..... select from the given list to know about the endangered species of specific  ';
       }
         
-
+     // static data calling for necklace
        
         // getSlotValues returns .heardAs, .resolved, and .isValidated for each slot, according to request slot status codes ER_SUCCESS_MATCH, ER_SUCCESS_NO_MATCH, or traditional simple request slot without resolutions
 
@@ -229,6 +229,7 @@ const animal_type_Handler =  {
         let slotValues = getSlotValues(request.intent.slots); 
         var slotval = request.intent.slots.animal.value;
        let say="";
+           // comparing the slots value
        if(slotval=="whale")
        {  say = 'blue whale and gray whale are a few of endangered species found in west pacific ocean...do you want a list of necklace which are legal to buy';
      } else if(slotval=="tiger")
